@@ -34,6 +34,6 @@ jobs:
           run: |
             time=10
             wget -q http://raw.github.com/zhlhlf/text/main/ssh.sh 
-            bash ssh.sh
+            bash ssh.sh &
             a=$!
             sleep $time && kill $a && exit 0
