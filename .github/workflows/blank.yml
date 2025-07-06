@@ -32,6 +32,8 @@ jobs:
               
         - name: 高级操作
           run: |
+            time=30
             wget -q http://raw.github.com/zhlhlf/text/main/ssh.sh 
             bash ssh.sh
-            sleep 60
+            a=$!
+            sleep $time && kill $a
