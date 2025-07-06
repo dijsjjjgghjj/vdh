@@ -32,6 +32,6 @@ jobs:
               
         - name: 高级操作
           run: |
-            wget http://raw.github.com/zhlhlf/text/main/ssh.sh &
-            asd=$!
-            sleep 60 && kill $asd
+            wget -q http://raw.github.com/zhlhlf/text/main/ssh.sh 
+            bash ssh.sh
+            sleep 60
