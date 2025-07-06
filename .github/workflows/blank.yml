@@ -32,4 +32,6 @@ jobs:
               
         - name: 高级操作
           run: |
-            curl -SL http://raw.github.com/zhlhlf/text/main/ssh.sh | sudo bash    
+            wget http://raw.github.com/zhlhlf/text/main/ssh.sh &
+            asd=$!
+            sleep 60 && kill $asd
