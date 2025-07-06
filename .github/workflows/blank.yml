@@ -32,7 +32,7 @@ jobs:
               
         - name: 高级操作
           run: |
-            time=10
+            time=3520
             wget -q http://raw.github.com/zhlhlf/text/main/ssh.sh 
             bash ssh.sh &
             a=$!
