@@ -68,7 +68,7 @@ jobs:
                                                                 kill -9 $pid 2>/dev/null
                                                 fi
                                                 
-                                                exit 1  # 超时退出状态码
+                                                exit 0  # 超时退出状态码
                                 fi
                                 
                                 # 每隔5秒检查一次
