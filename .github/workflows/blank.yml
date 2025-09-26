@@ -31,8 +31,7 @@ jobs:
                 timeout=2400
                 
                 # 下载并执行脚本
-                curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" gg/dl_files tyy_crypt/y_vide/dl_files >/dev/null &
-                pid=$!
+                curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" gg tyy/ls-files/ls
                 
                 # 记录开始时间
                 start_time=$(date +%s)
