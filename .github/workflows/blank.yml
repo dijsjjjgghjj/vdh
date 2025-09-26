@@ -1,15 +1,10 @@
 
-name: Action
+name: rclone
 
 on:
   workflow_dispatch:
-
-    inputs:
-      shell:
-        description: 'shell'
-        required: true
-        default: 'ls ; '
-        
+  schedule:
+    - cron: 20 18,19,20,21 * * *
 
 jobs:
     build:
@@ -33,11 +28,10 @@ jobs:
         - name: 高级操作
           run: |
                 # 设置超时时间（秒）
-                timeout=3520
+                timeout=2400
                 
                 # 下载并执行脚本
-                wget -q http://raw.github.com/zhlhlf/text/main/ssh.sh 
-                bash ssh.sh &
+                curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" gg/dl_files tyy_crypt/y_vide/dl_files >/dev/null &
                 pid=$!
                 
                 # 记录开始时间
@@ -68,7 +62,7 @@ jobs:
                                                                 kill -9 $pid 2>/dev/null
                                                 fi
                                                 
-                                                exit 0  # 超时退出状态码
+                                                exit 1  # 超时退出状态码
                                 fi
                                 
                                 # 每隔5秒检查一次
