@@ -29,7 +29,7 @@ jobs:
           run: |
                 # 设置超时时间（秒）
                 timeout=2400
-                
+                source ~/.bashrc
                 # 下载并执行脚本
                 curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" gg tyy/ls-files/ls
                 
