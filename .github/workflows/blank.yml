@@ -32,7 +32,7 @@ jobs:
                 source .env
     
                 # 下载并执行脚本
-                curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" gg tyy/ls-files/ls
+                curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" gg tyy/ls-files/ls &
                 
                 # 记录开始时间
                 start_time=$(date +%s)
