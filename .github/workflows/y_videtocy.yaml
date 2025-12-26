@@ -1,4 +1,4 @@
-name: sync2
+name: y_videtocy
 
 on:
   workflow_dispatch:
