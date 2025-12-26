@@ -1,4 +1,4 @@
-name: sync2
+name: ls-cy_vide
 
 on:
   workflow_dispatch:
