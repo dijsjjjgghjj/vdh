@@ -30,7 +30,7 @@ jobs:
 
         # 下载并执行脚本
         . .env
-        curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" y_vide cy_vide  &
+        curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" y_vide cy_vide 4 &
         pid=$!
 
         # 记录开始时间
