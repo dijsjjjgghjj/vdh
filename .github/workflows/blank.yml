@@ -1,4 +1,4 @@
-name: sync
+name: gg-cy_vide
 
 on:
   workflow_dispatch:
