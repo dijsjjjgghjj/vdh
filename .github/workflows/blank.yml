@@ -26,11 +26,11 @@ jobs:
     - name: 高级操作
       run: |
         # 设置超时时间（秒）
-        timeout=2900
+        timeout=3600
 
         # 下载并执行脚本
         . .env
-        curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" gg ls  &
+        curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" gg cy_vide  &
         pid=$!
 
         # 记录开始时间
