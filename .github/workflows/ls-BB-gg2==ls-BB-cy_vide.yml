@@ -1,4 +1,4 @@
-name: ls-B-gg22cy_vide
+name: ls-BB-gg2==ls-BB-cy_vide
 
 on:
   workflow_dispatch:
@@ -30,7 +30,7 @@ jobs:
 
         # 下载并执行脚本
         . .env
-        curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" ls/B/gg /ls/B/cy_vide  &
+        curl -sL https://github.com/zhlhlf/text/raw/refs/heads/main/upload/ABsync.sh | bash -s "$RCK" ls/BB/gg /ls/BB/cy_vide  &
         pid=$!
 
         # 记录开始时间
