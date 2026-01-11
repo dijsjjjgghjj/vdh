@@ -1,4 +1,4 @@
-name: gg-ls
+name: gg==ls
 
 on:
   workflow_dispatch:
