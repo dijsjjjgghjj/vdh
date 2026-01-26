@@ -3,7 +3,7 @@ name: ls-BB-gg==ls-BB-cy_vide
 on:
   workflow_dispatch:
   schedule:
-  - cron: 0 18,19,20,21,22,23 * * *
+  - cron: 0 20,21 * * *
 
 jobs:
   build:
